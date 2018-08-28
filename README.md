@@ -3,7 +3,7 @@
 
 
  This repo consists of slides and three Jupyter notebooks:
- - Quick intro to Python 3
+ - <a href='https://github.com/billsanto/CAPS-Redcap-API-Presentation-20180829/blob/master/caps_python_intro.ipynb'>Quick intro to Python 3</a>
     - Basic data structures
     - Comprehensions
     - Map, filter
@@ -11,7 +11,7 @@
     - Functions
     - Loops
     - Exception handling
- - Working with the Redcap API using Redcapy
+ - <a href='https://github.com/billsanto/CAPS-Redcap-API-Presentation-20180829/blob/master/caps_pandas_redcapy.ipynb'>Data Wrangling with Redcap and the Redcap API</a>
     - Import test data into a simple longitudinal project
         - Consists of baseline, 6, and 12 Month events
         - Repeating instrument
@@ -27,7 +27,7 @@
         - Missing data
         - Filtering DataFrames
         - Transforming data
- - Intro to Twilio API using Redcap data
+ - <a href=''>Messaging with Email and the Twilio API</a>
     - Sending email notifications with the SMTP protocol
     - Using Python logging to record events
     - Sending SMS to study participants using Twilio

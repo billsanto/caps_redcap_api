@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="CAPS Demo Project" AsOfDateTime="2018-08-29T07:38:03" CreationDateTime="2018-08-29T07:38:03" SourceSystem="REDCap" SourceSystemVersion="8.5.11">
+<Study OID="Project.CAPSDemoProject">
+<GlobalVariables>
+	<StudyName>CAPS Demo Project</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "CAPS Demo Project".</StudyDescription>
+	<ProtocolName>CAPS Demo Project</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel></redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField></redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:Purpose>0</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes></redcap:ProjectNotes>
+	<redcap:RepeatingInstrumentsAndEvents>
+		<redcap:RepeatingInstruments>
+			<redcap:RepeatingInstrument redcap:UniqueEventName="6_month_arm_2" redcap:RepeatInstrument="phone_follow_up" redcap:CustomLabel="[pfu_attempt_number]"/>
+		</redcap:RepeatingInstruments>
+		<redcap:RepeatingInstruments>
+			<redcap:RepeatingInstrument redcap:UniqueEventName="12_month_arm_2" redcap:RepeatInstrument="phone_follow_up" redcap:CustomLabel="[pfu_attempt_number]"/>
+		</redcap:RepeatingInstruments>
+		<redcap:RepeatingInstruments>
+			<redcap:RepeatingInstrument redcap:UniqueEventName="6_month_arm_3" redcap:RepeatInstrument="phone_follow_up" redcap:CustomLabel="[pfu_attempt_number]"/>
+		</redcap:RepeatingInstruments>
+		<redcap:RepeatingInstruments>
+			<redcap:RepeatingInstrument redcap:UniqueEventName="12_month_arm_3" redcap:RepeatInstrument="phone_follow_up" redcap:CustomLabel="[pfu_attempt_number]"/>
+		</redcap:RepeatingInstruments>
+	</redcap:RepeatingInstrumentsAndEvents>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.CAPSDemoProject_2018-08-29_0738" Name="CAPS Demo Project" redcap:RecordIdField="record_id">
+	<Protocol>
+		<StudyEventRef StudyEventOID="Event.baseline_arm_1" OrderNumber="1" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.6_month_arm_2" OrderNumber="2" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.12_month_arm_2" OrderNumber="3" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.6_month_arm_3" OrderNumber="4" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.12_month_arm_3" OrderNumber="5" Mandatory="No"/>
+	</Protocol>
+	<StudyEventDef OID="Event.baseline_arm_1" Name="Baseline (Arm 1: Baseline)" Type="Common" Repeating="No" redcap:EventName="Baseline" redcap:CustomEventLabel="" redcap:UniqueEventName="baseline_arm_1" redcap:ArmNum="1" redcap:ArmName="Baseline" redcap:DayOffset="1" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.participant_info" OrderNumber="1" Mandatory="No" redcap:FormName="participant_info"/>
+		<FormRef FormOID="Form.randomization" OrderNumber="2" Mandatory="No" redcap:FormName="randomization"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.6_month_arm_2" Name="6 Month (Arm 2: Red)" Type="Common" Repeating="No" redcap:EventName="6 Month" redcap:CustomEventLabel="" redcap:UniqueEventName="6_month_arm_2" redcap:ArmNum="2" redcap:ArmName="Red" redcap:DayOffset="1" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.exam" OrderNumber="1" Mandatory="No" redcap:FormName="exam"/>
+		<FormRef FormOID="Form.phone_follow_up" OrderNumber="2" Mandatory="No" redcap:FormName="phone_follow_up"/>
+		<FormRef FormOID="Form.sms_survey_log" OrderNumber="3" Mandatory="No" redcap:FormName="sms_survey_log"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.12_month_arm_2" Name="12 Month (Arm 2: Red)" Type="Common" Repeating="No" redcap:EventName="12 Month" redcap:CustomEventLabel="" redcap:UniqueEventName="12_month_arm_2" redcap:ArmNum="2" redcap:ArmName="Red" redcap:DayOffset="2" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.exam" OrderNumber="1" Mandatory="No" redcap:FormName="exam"/>
+		<FormRef FormOID="Form.phone_follow_up" OrderNumber="2" Mandatory="No" redcap:FormName="phone_follow_up"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.6_month_arm_3" Name="6 Month (Arm 3: Green)" Type="Common" Repeating="No" redcap:EventName="6 Month" redcap:CustomEventLabel="" redcap:UniqueEventName="6_month_arm_3" redcap:ArmNum="3" redcap:ArmName="Green" redcap:DayOffset="1" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.exam" OrderNumber="1" Mandatory="No" redcap:FormName="exam"/>
+		<FormRef FormOID="Form.phone_follow_up" OrderNumber="2" Mandatory="No" redcap:FormName="phone_follow_up"/>
+		<FormRef FormOID="Form.sms_survey_log" OrderNumber="3" Mandatory="No" redcap:FormName="sms_survey_log"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.12_month_arm_3" Name="12 Month (Arm 3: Green)" Type="Common" Repeating="No" redcap:EventName="12 Month" redcap:CustomEventLabel="" redcap:UniqueEventName="12_month_arm_3" redcap:ArmNum="3" redcap:ArmName="Green" redcap:DayOffset="2" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.exam" OrderNumber="1" Mandatory="No" redcap:FormName="exam"/>
+		<FormRef FormOID="Form.phone_follow_up" OrderNumber="2" Mandatory="No" redcap:FormName="phone_follow_up"/>
+	</StudyEventDef>
+	<FormDef OID="Form.participant_info" Name="Participant Info" Repeating="No" redcap:FormName="participant_info">
+		<ItemGroupRef ItemGroupOID="participant_info.record_id" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="participant_info.participant_info_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.randomization" Name="Randomization" Repeating="No" redcap:FormName="randomization">
+		<ItemGroupRef ItemGroupOID="randomization.rand_color" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="randomization.randomization_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.exam" Name="Exam" Repeating="No" redcap:FormName="exam">
+		<ItemGroupRef ItemGroupOID="exam.exam_num_teeth" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="exam.exam_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.phone_follow_up" Name="Phone Follow Up" Repeating="No" redcap:FormName="phone_follow_up">
+		<ItemGroupRef ItemGroupOID="phone_follow_up.pfu_attempt_number" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="phone_follow_up.phone_follow_up_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.sms_survey_log" Name="Sms Survey Log" Repeating="No" redcap:FormName="sms_survey_log">
+		<ItemGroupRef ItemGroupOID="sms_survey_log.txt_message" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="sms_survey_log.txt_manual_date" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="sms_survey_log.sms_survey_log_complete" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="participant_info.record_id" Name="Participant Info" Repeating="No">
+		<ItemRef ItemOID="record_id" Mandatory="No" redcap:Variable="record_id"/>
+		<ItemRef ItemOID="part_first_name" Mandatory="No" redcap:Variable="part_first_name"/>
+		<ItemRef ItemOID="part_last_name" Mandatory="No" redcap:Variable="part_last_name"/>
+		<ItemRef ItemOID="part_age" Mandatory="No" redcap:Variable="part_age"/>
+		<ItemRef ItemOID="part_mobile_number" Mandatory="No" redcap:Variable="part_mobile_number"/>
+		<ItemRef ItemOID="part_consent_date" Mandatory="No" redcap:Variable="part_consent_date"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="participant_info.participant_info_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="participant_info_complete" Mandatory="No" redcap:Variable="participant_info_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="randomization.rand_color" Name="Randomization" Repeating="No">
+		<ItemRef ItemOID="rand_color" Mandatory="Yes" redcap:Variable="rand_color"/>
+		<ItemRef ItemOID="rand_date" Mandatory="No" redcap:Variable="rand_date"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="randomization.randomization_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="randomization_complete" Mandatory="No" redcap:Variable="randomization_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="exam.exam_num_teeth" Name="Exam" Repeating="No">
+		<ItemRef ItemOID="exam_num_teeth" Mandatory="No" redcap:Variable="exam_num_teeth"/>
+		<ItemRef ItemOID="exam_active_caries_count" Mandatory="No" redcap:Variable="exam_active_caries_count"/>
+		<ItemRef ItemOID="exam_visit_date" Mandatory="No" redcap:Variable="exam_visit_date"/>
+		<ItemRef ItemOID="exam_photo" Mandatory="No" redcap:Variable="exam_photo"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="exam.exam_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="exam_complete" Mandatory="No" redcap:Variable="exam_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="phone_follow_up.pfu_attempt_number" Name="Phone Follow Up" Repeating="No">
+		<ItemRef ItemOID="pfu_attempt_number" Mandatory="No" redcap:Variable="pfu_attempt_number"/>
+		<ItemRef ItemOID="pfu_contact_date" Mandatory="No" redcap:Variable="pfu_contact_date"/>
+		<ItemRef ItemOID="pfu_call_outcome" Mandatory="No" redcap:Variable="pfu_call_outcome"/>
+		<ItemRef ItemOID="pfu_ae_reported" Mandatory="No" redcap:Variable="pfu_ae_reported"/>
+		<ItemRef ItemOID="pfu_ae_grade" Mandatory="No" redcap:Variable="pfu_ae_grade"/>
+		<ItemRef ItemOID="pfu_ae_attribution" Mandatory="No" redcap:Variable="pfu_ae_attribution"/>
+		<ItemRef ItemOID="pfu_ae_serious" Mandatory="No" redcap:Variable="pfu_ae_serious"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="phone_follow_up.phone_follow_up_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="phone_follow_up_complete" Mandatory="No" redcap:Variable="phone_follow_up_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="sms_survey_log.txt_message" Name="Sms Survey Log" Repeating="No">
+		<ItemRef ItemOID="txt_message" Mandatory="No" redcap:Variable="txt_message"/>
+		<ItemRef ItemOID="txt_last_timestamp" Mandatory="No" redcap:Variable="txt_last_timestamp"/>
+		<ItemRef ItemOID="txt_mobile_number" Mandatory="No" redcap:Variable="txt_mobile_number"/>
+		<ItemRef ItemOID="txt_twilio_sid" Mandatory="No" redcap:Variable="txt_twilio_sid"/>
+		<ItemRef ItemOID="txt_twilio_status" Mandatory="No" redcap:Variable="txt_twilio_status"/>
+		<ItemRef ItemOID="txt_date_created" Mandatory="No" redcap:Variable="txt_date_created"/>
+		<ItemRef ItemOID="txt_date_updated" Mandatory="No" redcap:Variable="txt_date_updated"/>
+		<ItemRef ItemOID="txt_twilio_error_code" Mandatory="No" redcap:Variable="txt_twilio_error_code"/>
+		<ItemRef ItemOID="txt_twilio_error_msg" Mandatory="No" redcap:Variable="txt_twilio_error_msg"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="sms_survey_log.txt_manual_date" Name="Manual Messaging Fields" Repeating="No">
+		<ItemRef ItemOID="txt_manual_date" Mandatory="No" redcap:Variable="txt_manual_date"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="sms_survey_log.sms_survey_log_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="sms_survey_log_complete" Mandatory="No" redcap:Variable="sms_survey_log_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="record_id" Name="record_id" DataType="text" Length="999" redcap:Variable="record_id" redcap:FieldType="text">
+		<Question><TranslatedText>Record ID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="part_first_name" Name="part_first_name" DataType="text" Length="999" redcap:Variable="part_first_name" redcap:FieldType="text">
+		<Question><TranslatedText>First Name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="part_last_name" Name="part_last_name" DataType="text" Length="999" redcap:Variable="part_last_name" redcap:FieldType="text">
+		<Question><TranslatedText>Last Name</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="part_age" Name="part_age" DataType="integer" Length="999" redcap:Variable="part_age" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Age</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="part_mobile_number" Name="part_mobile_number" DataType="text" Length="999" redcap:Variable="part_mobile_number" redcap:FieldType="text" redcap:TextValidationType="phone">
+		<Question><TranslatedText>Mobile Number</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="part_consent_date" Name="part_consent_date" DataType="text" Length="999" redcap:Variable="part_consent_date" redcap:FieldType="text">
+		<Question><TranslatedText>Consent Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="participant_info_complete" Name="participant_info_complete" DataType="text" Length="1" redcap:Variable="participant_info_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="participant_info_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="rand_color" Name="rand_color" DataType="text" Length="1" redcap:Variable="rand_color" redcap:FieldType="radio" redcap:RequiredField="y">
+		<Question><TranslatedText>Randomize?</TranslatedText></Question>
+		<CodeListRef CodeListOID="rand_color.choices"/>
+	</ItemDef>
+	<ItemDef OID="rand_date" Name="rand_date" DataType="date" Length="999" redcap:Variable="rand_date" redcap:FieldType="text" redcap:TextValidationType="date_mdy">
+		<Question><TranslatedText>Randomization Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="randomization_complete" Name="randomization_complete" DataType="text" Length="1" redcap:Variable="randomization_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="randomization_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="exam_num_teeth" Name="exam_num_teeth" DataType="integer" Length="999" redcap:Variable="exam_num_teeth" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Number of Teeth</TranslatedText></Question>
+		<RangeCheck Comparator="GE" SoftHard="Soft">
+			<CheckValue>0</CheckValue>
+			<ErrorMessage><TranslatedText>The value you provided is outside the suggested range. (0 - 32). This value is admissible, but you may wish to verify.</TranslatedText></ErrorMessage>
+		</RangeCheck>
+		<RangeCheck Comparator="LE" SoftHard="Soft">
+			<CheckValue>32</CheckValue>
+			<ErrorMessage><TranslatedText>The value you provided is outside the suggested range. (0 - 32). This value is admissible, but you may wish to verify.</TranslatedText></ErrorMessage>
+		</RangeCheck>
+	</ItemDef>
+	<ItemDef OID="exam_active_caries_count" Name="exam_active_caries_count" DataType="integer" Length="999" redcap:Variable="exam_active_caries_count" redcap:FieldType="text" redcap:TextValidationType="int">
+		<Question><TranslatedText>Number of Teeth with Active Caries</TranslatedText></Question>
+		<RangeCheck Comparator="GE" SoftHard="Soft">
+			<CheckValue>0</CheckValue>
+			<ErrorMessage><TranslatedText>The value you provided is outside the suggested range. (0 - 32). This value is admissible, but you may wish to verify.</TranslatedText></ErrorMessage>
+		</RangeCheck>
+		<RangeCheck Comparator="LE" SoftHard="Soft">
+			<CheckValue>32</CheckValue>
+			<ErrorMessage><TranslatedText>The value you provided is outside the suggested range. (0 - 32). This value is admissible, but you may wish to verify.</TranslatedText></ErrorMessage>
+		</RangeCheck>
+	</ItemDef>
+	<ItemDef OID="exam_visit_date" Name="exam_visit_date" DataType="text" Length="999" redcap:Variable="exam_visit_date" redcap:FieldType="text">
+		<Question><TranslatedText>Visit Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="exam_photo" Name="exam_photo" DataType="text" Length="999" redcap:Variable="exam_photo" redcap:FieldType="file">
+		<Question><TranslatedText>Photo</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="exam_complete" Name="exam_complete" DataType="text" Length="1" redcap:Variable="exam_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="exam_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="pfu_attempt_number" Name="pfu_attempt_number" DataType="text" Length="999" redcap:Variable="pfu_attempt_number" redcap:FieldType="text" redcap:FieldNote="This field is unique and is used to determine the redcap_repeat_instance field used in the API">
+		<Question><TranslatedText>Call Attempt Number</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="pfu_contact_date" Name="pfu_contact_date" DataType="text" Length="999" redcap:Variable="pfu_contact_date" redcap:FieldType="text">
+		<Question><TranslatedText>Contact Date</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="pfu_call_outcome" Name="pfu_call_outcome" DataType="text" Length="1" redcap:Variable="pfu_call_outcome" redcap:FieldType="radio">
+		<Question><TranslatedText>Call Outcome</TranslatedText></Question>
+		<CodeListRef CodeListOID="pfu_call_outcome.choices"/>
+	</ItemDef>
+	<ItemDef OID="pfu_ae_reported" Name="pfu_ae_reported" DataType="boolean" Length="1" redcap:Variable="pfu_ae_reported" redcap:FieldType="yesno" redcap:BranchingLogic="[pfu_call_outcome] = &#039;2&#039;">
+		<Question><TranslatedText>Adverse Event reported?</TranslatedText></Question>
+		<CodeListRef CodeListOID="pfu_ae_reported.choices"/>
+	</ItemDef>
+	<ItemDef OID="pfu_ae_grade" Name="pfu_ae_grade" DataType="text" Length="1" redcap:Variable="pfu_ae_grade" redcap:FieldType="radio" redcap:BranchingLogic="[pfu_ae_reported] = &#039;1&#039;">
+		<Question><TranslatedText>Adverse Event Grade</TranslatedText></Question>
+		<CodeListRef CodeListOID="pfu_ae_grade.choices"/>
+	</ItemDef>
+	<ItemDef OID="pfu_ae_attribution" Name="pfu_ae_attribution" DataType="text" Length="1" redcap:Variable="pfu_ae_attribution" redcap:FieldType="radio" redcap:BranchingLogic="[pfu_ae_reported] = &#039;1&#039;">
+		<Question><TranslatedText>Adverse Event Attribution - Related to a Study Device</TranslatedText></Question>
+		<CodeListRef CodeListOID="pfu_ae_attribution.choices"/>
+	</ItemDef>
+	<ItemDef OID="pfu_ae_serious" Name="pfu_ae_serious" DataType="boolean" Length="1" redcap:Variable="pfu_ae_serious" redcap:FieldType="yesno" redcap:BranchingLogic="[pfu_ae_reported] = &#039;1&#039;">
+		<Question><TranslatedText>Adverse Event Serious (Hospitalization or Death)</TranslatedText></Question>
+		<CodeListRef CodeListOID="pfu_ae_serious.choices"/>
+	</ItemDef>
+	<ItemDef OID="phone_follow_up_complete" Name="phone_follow_up_complete" DataType="text" Length="1" redcap:Variable="phone_follow_up_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="phone_follow_up_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="txt_message" Name="txt_message" DataType="text" Length="999" redcap:Variable="txt_message" redcap:FieldType="textarea" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Message Text</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_last_timestamp" Name="txt_last_timestamp" DataType="datetime" Length="999" redcap:Variable="txt_last_timestamp" redcap:FieldType="text" redcap:TextValidationType="datetime_seconds_mdy" redcap:FieldNote="Timestamp applies to all fields for this repeating instrument.  Normally, this form will be updated on up to 3 separate occasions within a given study week." redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>Timestamp of last data import to Redcap</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_mobile_number" Name="txt_mobile_number" DataType="text" Length="999" redcap:Variable="txt_mobile_number" redcap:FieldType="text" redcap:FieldNote="Participant&#039;s phone number, twilio formatted." redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Phone Number</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_twilio_sid" Name="txt_twilio_sid" DataType="text" Length="999" redcap:Variable="txt_twilio_sid" redcap:FieldType="text" redcap:FieldNote="This is a unique identifier associated with any SMS" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio SID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_twilio_status" Name="txt_twilio_status" DataType="text" Length="999" redcap:Variable="txt_twilio_status" redcap:FieldType="text" redcap:FieldNote="One of: attempting, queued, delivered, undelivered, or failed." redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio Delivery Status</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_date_created" Name="txt_date_created" DataType="datetime" Length="999" redcap:Variable="txt_date_created" redcap:FieldType="text" redcap:TextValidationType="datetime_seconds_mdy" redcap:FieldNote="Timestamp obtained from Twilio API" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio Date Created</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_date_updated" Name="txt_date_updated" DataType="datetime" Length="999" redcap:Variable="txt_date_updated" redcap:FieldType="text" redcap:TextValidationType="datetime_seconds_mdy" redcap:FieldNote="Timestamp obtained from Twilio API" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio Date Updated</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_twilio_error_code" Name="txt_twilio_error_code" DataType="text" Length="999" redcap:Variable="txt_twilio_error_code" redcap:FieldType="text" redcap:FieldNote="for failed or undelivered status states only" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio Error Code</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_twilio_error_msg" Name="txt_twilio_error_msg" DataType="text" Length="999" redcap:Variable="txt_twilio_error_msg" redcap:FieldType="text" redcap:FieldNote="for failed or undelivered status states only" redcap:FieldAnnotation="@READONLY">
+		<Question><TranslatedText>SMS Twilio Error Message</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="txt_manual_date" Name="txt_manual_date" DataType="date" Length="999" redcap:Variable="txt_manual_date" redcap:FieldType="text" redcap:TextValidationType="date_dmy" redcap:FieldNote="Staff should enter the date that a manual text containing a survey link was sent in this field.  If an automated text message was sent, there is no need to enter data in the manual field(s)." redcap:SectionHeader="Manual Messaging Fields">
+		<Question><TranslatedText>Date manual text message sent</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="sms_survey_log_complete" Name="sms_survey_log_complete" DataType="text" Length="1" redcap:Variable="sms_survey_log_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="sms_survey_log_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="participant_info_complete.choices" Name="participant_info_complete" DataType="text" redcap:Variable="participant_info_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="rand_color.choices" Name="rand_color" DataType="text" redcap:Variable="rand_color">
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Red</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Green</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="randomization_complete.choices" Name="randomization_complete" DataType="text" redcap:Variable="randomization_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="exam_complete.choices" Name="exam_complete" DataType="text" redcap:Variable="exam_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="pfu_call_outcome.choices" Name="pfu_call_outcome" DataType="text" redcap:Variable="pfu_call_outcome">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Left voice message</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Spoke with participant</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Unable to contact</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="pfu_ae_reported.choices" Name="pfu_ae_reported" DataType="boolean" redcap:Variable="pfu_ae_reported">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="pfu_ae_grade.choices" Name="pfu_ae_grade" DataType="text" redcap:Variable="pfu_ae_grade">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Mild</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Moderate</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Severe</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="pfu_ae_attribution.choices" Name="pfu_ae_attribution" DataType="text" redcap:Variable="pfu_ae_attribution">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Definitely</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Probably</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>Possibly</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>Probably Not</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>Definitely Not</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="pfu_ae_serious.choices" Name="pfu_ae_serious" DataType="boolean" redcap:Variable="pfu_ae_serious">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Yes</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>No</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="phone_follow_up_complete.choices" Name="phone_follow_up_complete" DataType="text" redcap:Variable="phone_follow_up_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="sms_survey_log_complete.choices" Name="sms_survey_log_complete" DataType="text" redcap:Variable="sms_survey_log_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+</ODM>

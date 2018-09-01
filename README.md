@@ -28,7 +28,7 @@
             - Missing data
             - Filtering DataFrames
             - Transforming data
-     - <a href=''>Messaging with Email and the Twilio API</a>
+     - <a href='https://github.com/billsanto/caps_redcap_api/blob/master/caps_twilio_email.ipynb'>Messaging with Email and the Twilio API</a>
         - Sending email notifications with the SMTP protocol
         - Using Python logging to record events
         - Sending SMS to study participants using Twilio
@@ -37,6 +37,8 @@
         - Importing Twilio status data into a Redcap instrument
 - An <a href='https://github.com/billsanto/caps_redcap_api/blob/master/CAPSDemoProject_2018-08-29_0738.REDCap.xml'>XML copy</a> of the Redcap demo project that is paired with this code is also available. This file can be imported into Redcap by selecting <a href='https://redcap.ucsf.edu/index.php?action=create'>'New Project'</a> and choosing the option 'Upload a REDCap project XML file (CDISC ODM format)'.
 - A sample <a href='https://github.com/billsanto/caps_redcap_api/blob/master/RandomizationAllocationTemplate-7.csv'>randomization template</a> used with the demo project
+
+The second and third notebooks use the <a href='https://github.com/billsanto/redcapy'>Redcapy library</a>, which provides convenience methods for accessing commonly used Redcap API endpoints in our projects.
 
 
 

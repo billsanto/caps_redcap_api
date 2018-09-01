@@ -5,7 +5,7 @@
  This repo contains:
  - A <a href='https://github.com/billsanto/caps_redcap_api/blob/master/caps_redcap_api_presentation.pdf'>pdf export</a> of the presentation
  - Three Jupyter notebooks. The notebooks progress from the basics to fully functional code that can be adapted for a project:
-     - <a href='https://github.com/billsanto/CAPS-Redcap-API-Presentation-20180829/blob/master/caps_python_intro.ipynb'>Intro to Python 3</a>
+     - <a href='https://github.com/billsanto/caps_redcap_api/blob/master/caps_python_intro.ipynb'>Intro to Python 3</a>
         - Basic data structures
         - Comprehensions
         - Map, filter
@@ -13,7 +13,7 @@
         - Functions
         - Loops
         - Exception handling
-     - <a href='https://github.com/billsanto/CAPS-Redcap-API-Presentation-20180829/blob/master/caps_pandas_redcapy.ipynb'>Data Wrangling with Redcap</a>
+     - <a href='https://github.com/billsanto/caps_redcap_api/blob/master/caps_redcap_api.ipynb'>Data Wrangling with Redcap</a>
         - Import test data into a simple longitudinal project
             - Consists of baseline, 6, and 12 Month events
             - Repeating instrument
